@@ -1,0 +1,13 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="LabWork3.Views.RegistrationView">
+	<StackPanel>
+		<TextBox Watermark="Логин" Width="100" HorizontalAlignment="Left"/>
+		<TextBox Watermark="Пароль" PasswordChar="*" Width="100" HorizontalAlignment="Left"/>
+		<TextBox Watermark="Email" TextInputOptions.ContentType="Email" Width="100" HorizontalAlignment="Left"/>
+		<TextBox Watermark="Телефон" TextInputOptions.ContentType="Digits" Width="100" HorizontalAlignment="Left"/>
+	</StackPanel>
+</UserControl>

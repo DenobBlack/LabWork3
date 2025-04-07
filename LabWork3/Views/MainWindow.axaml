@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:LabWork3.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:views="clr-namespace:LabWork3.Views"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="LabWork3.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="LabWork3">
+	<StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Button Content="Регистрация" Command="{Binding RegistrationCommand}"/>
+			<Button Content="Авторизация" Command="{Binding AuthorizationCommand}"/>
+		</StackPanel>
+
+		<ContentControl Content="{Binding CurrentPage}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+	</StackPanel>
+        
+</Window>
